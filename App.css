@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgba(175, 9, 9, 0.801);
+  font-family:Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container h1{
+  font-size: 54px;
+  color: rgb(255, 217, 0);
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: rgb(0, 110, 255);
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pokemons{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10px;
+
+}
+
+.card{
+  max-width: 300px;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  border-radius: 20px;
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+.card-image{
+  max-width: 250px;
+
+}
+
+.card:hover .type{
+  cursor: pointer;
+  top: 0;
+}
+
+.type{
+  color: rgb(119, 119, 119);
+  padding-top: 5px;
+  position: relative;
+  top: 45px;
+  transition: top 1s;
+  font-size: 1.3rem;
+}
+
+.busca-container{
+  margin-block: 2.5rem;
+  padding: .625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.busca{
+  border: none;
+  outline: none;
+  background-color: rgba(136, 136, 136, 0.555);
+  box-shadow: 10px 20px 40px rgba(255, 255, 255, 0.014);
+  padding-inline: 2rem;
+  border-radius: .625rem;
+  width: 30%;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  line-height: 3rem;
+  transition: 1s;
+}
+
+.busca:hover{
+  background-color: rgb(151, 27, 27);
+  color:rgb(82, 82, 82);
+  width: 30%;
+}
+
+
+
+
+.fire{
+  background-color: rgb(238, 73, 106);
+}
+
+.grass{
+  background-color: chartreuse;
+}
+
+.water{
+  background-color: rgb(55, 158, 226);
+}
+.bug{
+  background-color: darkgoldenrod;
+}
+.normal{
+  background: rgb(187, 187, 187);
+}
+.poison{
+  background-color: rgb(154, 69, 233);
+}
+.fairy{
+  background-color: rgba(238, 130, 238, 0.596);
+}
+.ground{
+  background-color: burlywood;
+}
+.fighting{
+  background-color: brown;
+}
+.psychic{
+  background-color: rgb(209, 117, 171);
+}
+.rock{
+  background-color: grey;
+}
+.electric{
+  background-color: rgb(255, 183, 0);
+}
+.ghost{
+  background-color: rgb(99, 91, 121);
+}
+.ice{
+  background-color: rgba(127, 255, 212, 0.767);
+}
+.dragon{
+  background-color: rgba(255, 110, 7, 0.664);
+}
